@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException, status
 
-from backend.schemas.learning import LearningModeRequest, LearningModeResponse
-from backend.services.learning_service import learning_mode_explain
+from schemas.learning import LearningModeRequest, LearningModeResponse
+from services.learning_service import learning_mode_explain
 
 router = APIRouter(tags=["learning-mode"])
 

@@ -3,10 +3,10 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.models import ErrorLog
-from backend.schemas import LogErrorResponse, ErrorLogCreate
-from backend.services import explain_error_ai
+from database import get_db
+from models import ErrorLog
+from schemas import LogErrorResponse, ErrorLogCreate
+from services import explain_error_ai
 
 router = APIRouter(tags=["error-logging"])
 

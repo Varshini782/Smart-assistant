@@ -3,9 +3,9 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.schemas import UserInsightsResponse
-from backend.services.insights_service import get_user_insights
+from database import get_db
+from schemas import UserInsightsResponse
+from services.insights_service import get_user_insights
 
 router = APIRouter(tags=["user-insights"])
 

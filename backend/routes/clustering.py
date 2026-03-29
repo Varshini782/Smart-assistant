@@ -5,9 +5,9 @@ from typing import Any
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.models import ErrorLog
-from backend.services.clustering_service import find_similar_errors
+from database import get_db
+from models import ErrorLog
+from services.clustering_service import find_similar_errors
 
 router = APIRouter(tags=["clustering"])
 

@@ -3,9 +3,9 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.schemas.dashboard import DashboardResponse
-from backend.services.dashboard_service import get_dashboard
+from database import get_db
+from schemas.dashboard import DashboardResponse
+from services.dashboard_service import get_dashboard
 
 router = APIRouter(tags=["dashboard"])
 

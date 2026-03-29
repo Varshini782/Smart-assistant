@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile, status
 
-from backend.schemas.process_input import ProcessInputResponse
-from backend.services.input_service import process_input
+from schemas.process_input import ProcessInputResponse
+from services.input_service import process_input
 
 router = APIRouter(tags=["process-input"])
 

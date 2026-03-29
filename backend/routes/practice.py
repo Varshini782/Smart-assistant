@@ -3,8 +3,8 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.schemas.practice import (
+from database import get_db
+from schemas.practice import (
     DailyChallengeResponse,
     StreakResponse,
     SubmitSolutionRequest,

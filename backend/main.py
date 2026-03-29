@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from backend.database import engine
-from backend.models import Base
-from backend.routes import (
+from database import engine
+from models import Base
+from routes import (
     clustering_router,
     dashboard_router,
     explain_error_router,

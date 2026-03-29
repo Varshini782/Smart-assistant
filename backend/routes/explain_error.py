@@ -3,8 +3,8 @@ from __future__ import annotations
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 
-from backend.schemas import ExplainErrorRequest, ExplainErrorSingleResponse
-from backend.services.multi_explainer import explain_error_multi
+from schemas import ExplainErrorRequest, ExplainErrorSingleResponse
+from services.multi_explainer import explain_error_multi
 
 router = APIRouter(tags=["multi-explainer"])
 

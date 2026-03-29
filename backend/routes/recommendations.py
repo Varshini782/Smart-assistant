@@ -3,9 +3,9 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.schemas import RecommendationsResponse
-from backend.services.recommendation_service import build_recommendations
+from database import get_db
+from schemas import RecommendationsResponse
+from services.recommendation_service import build_recommendations
 
 router = APIRouter(tags=["recommendations"])
 

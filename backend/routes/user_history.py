@@ -3,9 +3,9 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from backend.database import get_db
-from backend.schemas import ErrorLogResponse
-from backend.services.history_service import get_user_history
+from database import get_db
+from schemas import ErrorLogResponse
+from services.history_service import get_user_history
 
 router = APIRouter(tags=["user-history"])
 
