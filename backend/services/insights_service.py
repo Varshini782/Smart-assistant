@@ -4,8 +4,8 @@ from collections import Counter
 
 from sqlalchemy.orm import Session
 
-from backend.models import ErrorLog
-from backend.schemas import UserInsightsResponse
+from models import ErrorLog
+from schemas import UserInsightsResponse
 
 
 def get_user_insights(db: Session, user_id: str) -> UserInsightsResponse:

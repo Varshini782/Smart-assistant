@@ -5,8 +5,8 @@ from copy import deepcopy
 
 from sqlalchemy.orm import Session
 
-from backend.models import ErrorLog
-from backend.schemas import RecommendationsResponse
+from models import ErrorLog
+from schemas import RecommendationsResponse
 
 # Rule bundles keyed by normalized error type (lowercase).
 _ERROR_RULES: dict[str, dict[str, list[str]]] = {

@@ -5,8 +5,8 @@ from datetime import date, datetime, timedelta, timezone
 
 from sqlalchemy.orm import Session
 
-from backend.models import ErrorLog
-from backend.schemas.dashboard import DashboardResponse
+from models import ErrorLog
+from schemas.dashboard import DashboardResponse
 
 
 def _log_calendar_day(ts: datetime) -> date:

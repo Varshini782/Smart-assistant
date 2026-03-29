@@ -8,7 +8,7 @@ from urllib.parse import quote_plus
 
 from google import genai
 
-from backend.schemas.learning import LearningModeResponse
+from schemas.learning import LearningModeResponse
 
 CONCEPT_LINKS: dict[str, str] = {
     "Lists": "https://www.w3schools.com/python/python_lists.asp",

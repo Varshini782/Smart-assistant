@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from sqlalchemy.orm import Session
 
-from backend.models import ErrorLog
+from models import ErrorLog
 
 
 def get_user_history(db: Session, user_id: str, limit: int = 50) -> list[ErrorLog]:

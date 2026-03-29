@@ -10,7 +10,7 @@ from schemas.practice import (
     SubmitSolutionRequest,
     SubmitSolutionResponse,
 )
-from backend.services.practice_service import (
+from services.practice_service import (
     get_daily_challenge,
     get_streak,
     submit_solution,

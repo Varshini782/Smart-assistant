@@ -7,7 +7,7 @@ from datetime import date, timedelta
 
 from sqlalchemy.orm import Session
 
-from backend.models import Streak
+from models import Streak
 
 DAILY_CHALLENGES: list[dict[str, str | int]] = [
     {
